@@ -24,7 +24,7 @@ class Dashboard extends StatelessWidget {
           ),
           Center(
             child: Container(
-              height: varHeight * 0.15,
+              height: varHeight * 0.16,
               width: varWidth * 0.9,
               decoration: BoxDecoration(
                 color: const Color(0xffF2BEF8),
@@ -47,7 +47,7 @@ class Dashboard extends StatelessWidget {
           ),
           Center(
             child: Container(
-              height: varHeight * 0.15,
+              height: varHeight * 0.16,
               width: varWidth * 0.9,
               decoration: BoxDecoration(
                 color: const Color(0xffAAE9E4),
@@ -70,7 +70,7 @@ class Dashboard extends StatelessWidget {
           ),
           Center(
             child: Container(
-              height: varHeight * 0.15,
+              height: varHeight * 0.16,
               width: varWidth * 0.9,
               decoration: BoxDecoration(
                 color: const Color(0xffF1ABB1),
@@ -93,7 +93,7 @@ class Dashboard extends StatelessWidget {
           ),
           Center(
             child: Container(
-              height: varHeight * 0.15,
+              height: varHeight * 0.16,
               width: varWidth * 0.9,
               decoration: BoxDecoration(
                 color: const Color(0xffF1E4AB),
@@ -116,3 +116,4 @@ class Dashboard extends StatelessWidget {
     );
   }
 }
+
