@@ -91,6 +91,15 @@ class _AddPatientState extends State<AddPatient>{
         child: Column(
           children: [
             Container(
+              margin: EdgeInsets.only(top: 48,right: 100,left: 20),
+              child:
+              Text('Enter Patient Details',
+                style:TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold
+                ),
+                textAlign: TextAlign.left,
+              ),
               height:varheight*0.3 ,
               decoration: BoxDecoration(
                 color: Color(0xffF2BEF8),
