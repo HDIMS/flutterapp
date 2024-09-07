@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_auth/Screens/Signup/components/or_divider.dart';
-import 'package:flutter_auth/constants.dart';
-import 'package:flutter_auth/responsive.dart';
+import 'package:flutterapp/Screens/Signup/components/or_divider.dart';
+import 'package:flutterapp/constants.dart';
+import 'package:flutterapp/responsive.dart';
 import '../../components/background.dart';
 import 'components/sign_up_top_image.dart';
 import 'components/signup_form.dart';
