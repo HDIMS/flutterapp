@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/pages/ad_patient.dart';
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
 
@@ -22,21 +23,28 @@ class Dashboard extends StatelessWidget {
               ),),
             ),    
           ),
-          Center(
-            child: Container(
-              height: varHeight * 0.16,
-              width: varWidth * 0.9,
-              decoration: BoxDecoration(
-                color: const Color(0xffF2BEF8),
-                borderRadius: BorderRadius.circular(30),
-              ),
-              child: const Padding(
-                padding: EdgeInsets.only(left: 30, top: 50),
-                child: Text(
-                  "Add Patient",
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return const AddPatient();
+              }));
+            },
+            child: Center(
+              child: Container(
+                height: varHeight * 0.16,
+                width: varWidth * 0.9,
+                decoration: BoxDecoration(
+                  color: const Color(0xffF2BEF8),
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: const Padding(
+                  padding: EdgeInsets.only(left: 30, top: 50),
+                  child: Text(
+                    "Add Patient",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),

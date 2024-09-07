@@ -90,6 +90,14 @@ class _AddPatientState extends State<AddPatient>{
         child: Column(
           children: [
             Container(
+              child: Padding(
+                padding: const EdgeInsets.only(right:170,top:150),
+                child: Text("Add Patient",
+                style: TextStyle(
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
+                ),),
+              ),
               height:varheight*0.3 ,
               decoration: BoxDecoration(
                 color: Color(0xffF2BEF8),
@@ -128,7 +136,7 @@ class _AddPatientState extends State<AddPatient>{
                           controller: nameController,
                           decoration: InputDecoration(
                               filled: true,
-                              fillColor: Colors.red[200],
+                              fillColor: Color(0xffF2BEF8),
                               contentPadding: EdgeInsets.all(25),
                               hintText: 'Name',
                               hintStyle: TextStyle(
@@ -158,7 +166,7 @@ class _AddPatientState extends State<AddPatient>{
                           controller: emailController,
                           decoration: InputDecoration(
                               filled: true,
-                              fillColor: Colors.red[200],
+                              fillColor: Color(0xffF2BEF8),
                               contentPadding: EdgeInsets.all(25),
                               hintText: 'Email Id',
                               hintStyle: TextStyle(
@@ -188,7 +196,7 @@ class _AddPatientState extends State<AddPatient>{
                           controller: phoneController,
                           decoration: InputDecoration(
                               filled: true,
-                              fillColor: Colors.red[200],
+                              fillColor: Color(0xffF2BEF8),
                               contentPadding: EdgeInsets.all(25),
                               hintText: 'Phone No.',
                               hintStyle: TextStyle(
@@ -218,7 +226,7 @@ class _AddPatientState extends State<AddPatient>{
                           controller: ageController,
                           decoration: InputDecoration(
                               filled: true,
-                              fillColor: Colors.red[200],
+                              fillColor: Color(0xffF2BEF8),
                               contentPadding: EdgeInsets.all(25),
                               hintText: 'Age',
                               hintStyle: TextStyle(
@@ -248,7 +256,7 @@ class _AddPatientState extends State<AddPatient>{
                         controller: genderController,
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Colors.red[200],
+                          fillColor: Color(0xffF2BEF8),
                           contentPadding: EdgeInsets.all(25),
                           hintText: 'Gender',
                           hintStyle: TextStyle(
@@ -281,7 +289,7 @@ class _AddPatientState extends State<AddPatient>{
                         maxLines: 5,
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Colors.red[200],
+                          fillColor: Color(0xffF2BEF8),
                           contentPadding: EdgeInsets.all(25),
                           hintText: 'Address',
                           hintStyle: TextStyle(
@@ -311,7 +319,7 @@ class _AddPatientState extends State<AddPatient>{
                         controller: pinController,
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Colors.red[200],
+                          fillColor: Color(0xffF2BEF8),
                           contentPadding: EdgeInsets.all(25),
                           hintText: 'Pin',
                           hintStyle: TextStyle(
@@ -341,7 +349,7 @@ class _AddPatientState extends State<AddPatient>{
                         controller: bloodController,
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Colors.red[200],
+                          fillColor: Color(0xffF2BEF8),
                           contentPadding: EdgeInsets.all(25),
                           hintText: 'Blood Group',
                           hintStyle: TextStyle(
@@ -374,7 +382,7 @@ class _AddPatientState extends State<AddPatient>{
                         maxLines: 5,
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Colors.red[200],
+                          fillColor: Color(0xffF2BEF8),
                           contentPadding: EdgeInsets.all(25),
                           hintText: 'Medical History',
                           hintStyle: TextStyle(
@@ -407,7 +415,7 @@ class _AddPatientState extends State<AddPatient>{
                         maxLines: 5,
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Colors.red[200],
+                          fillColor: Color(0xffF2BEF8),
                           contentPadding: EdgeInsets.all(25),
                           hintText: 'Vaccination',
                           hintStyle: TextStyle(
@@ -440,7 +448,7 @@ class _AddPatientState extends State<AddPatient>{
                         maxLines: 5,
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Colors.red[200],
+                          fillColor: Color(0xffF2BEF8),
                           contentPadding: EdgeInsets.all(25),
                           hintText: 'Undergoing Medications',
                           hintStyle: TextStyle(
@@ -473,7 +481,7 @@ class _AddPatientState extends State<AddPatient>{
                         maxLines: 5,
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Colors.red[200],
+                          fillColor: Color(0xffF2BEF8),
                           contentPadding: EdgeInsets.all(25),
                           hintText: 'Family medical history',
                           hintStyle: TextStyle(
@@ -506,7 +514,7 @@ class _AddPatientState extends State<AddPatient>{
                         maxLines: 5,
                         decoration: InputDecoration(
                           filled: true,
-                          fillColor: Colors.red[200],
+                          fillColor: Color(0xffF2BEF8),
                           contentPadding: EdgeInsets.all(25),
                           hintText: 'Allergies',
                           hintStyle: TextStyle(
@@ -534,7 +542,7 @@ class _AddPatientState extends State<AddPatient>{
                           backgroundColor: Colors.black87,
                         ),
                         child: Text(
-                          'ADD PATIENT',
+                          'Add Patient',
                           style: TextStyle(
                             fontSize: 32,
                             fontWeight: FontWeight.bold,
