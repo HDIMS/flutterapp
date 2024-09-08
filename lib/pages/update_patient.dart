@@ -89,20 +89,36 @@ class _AddPatientState extends State<UpdatePatient>{
       SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              child: Padding(
-                padding: const EdgeInsets.only(right:250,top:120),
-                child: Text("Update\nPatient",
-                style: TextStyle(
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                ),),
-              ),
-              height:varheight*0.3 ,
-              decoration: BoxDecoration(
-                color: Color(0xffAAE9E4),
-              ),
-            ),
+            Stack(
+  children: [
+    Container(
+      height: varheight * 0.3,
+      decoration: BoxDecoration(
+        color: Color(0xffAAE9E4),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.only(right: 190, top: 150),
+        child: Text(
+          "Update Patient",
+          style: TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    ),
+    Positioned(
+      right: -10, // Position the image as needed
+      top: 60,   // Adjust the top position as needed
+      child: Image.asset(
+        'lib/assets/tree.png',
+        height: 190,
+        width: 190,
+        fit: BoxFit.contain, // Ensures the image won't overflow
+      ),
+    ),
+  ],
+),
             // SingleChildScrollView(
               Container(
                 height: varheight*1.63,
