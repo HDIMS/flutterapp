@@ -89,27 +89,45 @@ class _AddPatientState extends State<AddPatient>{
       SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              child: Padding(
-                padding: const EdgeInsets.only(right:170,top:150),
-                child: Text("Add Patient",
-                style: TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.bold,
-                ),),
-              ),
-              height:varheight*0.3 ,
-              decoration: BoxDecoration(
-                color: Color(0xffF2BEF8),
-              ),
-            ),
+            
+            Stack(
+  children: [
+    Container(
+      height: varheight * 0.3,
+      decoration: BoxDecoration(
+        color: Color(0xffF2BEF8),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.only(right: 190, top: 150),
+        child: Text(
+          "Add Patient",
+          style: TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    ),
+    Positioned(
+      right: -20, // Position the image as needed
+      top: 60,   // Adjust the top position as needed
+      child: Image.asset(
+        'lib/assets/tree.png',
+        height: 190,
+        width: 190,
+        fit: BoxFit.contain, // Ensures the image won't overflow
+      ),
+    ),
+  ],
+),
+
             // SingleChildScrollView(
               Container(
                 height: varheight*1.63,
                 margin:EdgeInsets.only(top:10),
                 decoration: BoxDecoration(
                     color:Colors.white,
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(30),
                     boxShadow: [
                       BoxShadow(
                         color: Color(0xff1D1617).withOpacity(0.11),
@@ -145,7 +163,7 @@ class _AddPatientState extends State<AddPatient>{
                                 fontWeight: FontWeight.w600,
                               ),
                               border:OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(15),
+                                  borderRadius: BorderRadius.circular(30),
                                   borderSide: BorderSide.none
                               )
                           ),
@@ -175,7 +193,7 @@ class _AddPatientState extends State<AddPatient>{
                                 fontWeight: FontWeight.w600,
                               ),
                               border:OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(15),
+                                  borderRadius: BorderRadius.circular(30),
                                   borderSide: BorderSide.none
                               )
                           ),
@@ -205,7 +223,7 @@ class _AddPatientState extends State<AddPatient>{
                                 fontWeight: FontWeight.w600,
                               ),
                               border:OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(15),
+                                  borderRadius: BorderRadius.circular(30),
                                   borderSide: BorderSide.none
                               )
                           ),
@@ -235,7 +253,7 @@ class _AddPatientState extends State<AddPatient>{
                                 fontWeight: FontWeight.w600,
                               ),
                               border:OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(15),
+                                  borderRadius: BorderRadius.circular(30),
                                   borderSide: BorderSide.none
                               )
                           ),
@@ -265,7 +283,7 @@ class _AddPatientState extends State<AddPatient>{
                             fontWeight: FontWeight.w600,
                           ),
                           border:OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide.none
                           ),
                         ),
@@ -298,7 +316,7 @@ class _AddPatientState extends State<AddPatient>{
                             fontWeight: FontWeight.w600,
                           ),
                           border:OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide.none
                           ),
                         ),
@@ -328,7 +346,7 @@ class _AddPatientState extends State<AddPatient>{
                             fontWeight: FontWeight.w600,
                           ),
                           border:OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide.none
                           ),
                         ),
@@ -358,7 +376,7 @@ class _AddPatientState extends State<AddPatient>{
                             fontWeight: FontWeight.w600,
                           ),
                           border:OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide.none
                           ),
                         ),
@@ -391,7 +409,7 @@ class _AddPatientState extends State<AddPatient>{
                             fontWeight: FontWeight.w600,
                           ),
                           border:OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide.none
                           ),
                         ),
@@ -424,7 +442,7 @@ class _AddPatientState extends State<AddPatient>{
                             fontWeight: FontWeight.w600,
                           ),
                           border:OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide.none
                           ),
                         ),
@@ -457,7 +475,7 @@ class _AddPatientState extends State<AddPatient>{
                             fontWeight: FontWeight.w600,
                           ),
                           border:OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide.none
                           ),
                         ),
@@ -490,7 +508,7 @@ class _AddPatientState extends State<AddPatient>{
                             fontWeight: FontWeight.w600,
                           ),
                           border:OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide.none
                           ),
                         ),
@@ -523,7 +541,7 @@ class _AddPatientState extends State<AddPatient>{
                             fontWeight: FontWeight.w600,
                           ),
                           border:OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide.none
                           ),
                         ),
@@ -537,7 +555,7 @@ class _AddPatientState extends State<AddPatient>{
                         style: ElevatedButton.styleFrom(
                           padding: EdgeInsets.all(25),
                           shape:RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(30),
                           ),
                           backgroundColor: Colors.black87,
                         ),

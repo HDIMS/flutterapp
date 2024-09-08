@@ -91,10 +91,10 @@ class _AddPatientState extends State<UpdatePatient>{
           children: [
             Container(
               child: Padding(
-                padding: const EdgeInsets.only(right:170,top:150),
-                child: Text("Update Patient",
+                padding: const EdgeInsets.only(right:250,top:120),
+                child: Text("Update\nPatient",
                 style: TextStyle(
-                  fontSize: 26,
+                  fontSize: 28,
                   fontWeight: FontWeight.bold,
                 ),),
               ),
