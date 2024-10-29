@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'save_email.dart';
-import 'dashboard.dart'; // Import your Dashboard screen
+import 'dashboard.dart'; 
 
 class HomeScreen extends StatelessWidget {
-  final TextEditingController _nameController = TextEditingController(); // Controller for name
+  final TextEditingController _nameController = TextEditingController(); 
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             TextField(
-              controller: _nameController, // Name input field
+              controller: _nameController,
               decoration: InputDecoration(labelText: 'Enter your name'),
             ),
             SizedBox(height: 20),
@@ -37,9 +37,9 @@ class HomeScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: () async {
                 try {
-                  // Call the function with name, email, and password
+                  // Calling the function with name, email, and password
                   await saveEmailAndPassword(
-                    _nameController.text.trim(), // Pass name
+                    _nameController.text.trim(), 
                     _emailController.text.trim(),
                     _passwordController.text.trim(),
                   );

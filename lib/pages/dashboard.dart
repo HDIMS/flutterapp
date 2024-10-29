@@ -12,7 +12,7 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-  String? userName; // Store the user's name
+  String? userName; 
 
   @override
   void initState() {
@@ -67,9 +67,9 @@ class _DashboardState extends State<Dashboard> {
               leading: const Icon(Icons.exit_to_app),
               title: const Text('Sign Out'),
               onTap: () {
-                // Add sign-out functionality here
+                //temporarily it is "signout" kept unassigned
                 Navigator.of(context).pop(); // Close the drawer
-                // Implement your sign-out logic here
+                
               },
             ),
           ],
@@ -77,18 +77,17 @@ class _DashboardState extends State<Dashboard> {
       ),
       body: Stack(
         children: [
-          // Icon to open the drawer when tapped
           Positioned(
-            top: 40, // Adjust the top padding if necessary
-            left: 30, // Adjust the left padding if necessary
+            top: 40, 
+            left: 30, 
             child: Builder(
               builder: (context) => GestureDetector(
                 onTap: () {
-                  Scaffold.of(context).openDrawer(); // Open the drawer when tapped
+                  Scaffold.of(context).openDrawer(); 
                 },
                 child: Image.asset(
                   'lib/assets/guy1.png',
-                  width: 70, // Adjust the size of the image as needed
+                  width: 70, 
                   height: 70,
                 ),
               ),
@@ -96,7 +95,7 @@ class _DashboardState extends State<Dashboard> {
           ),
           // Displaying the user's name below the icon
           Positioned(
-            top: 130, // Adjust the top padding to place the text below the icon
+            top: 130, 
             left: 20,
             child: Text(
               userName != null ? ' $userName\n Chennai' : 'Fetching name...',

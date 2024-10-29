@@ -6,16 +6,15 @@ final FirebaseAuth _auth = FirebaseAuth.instance;
 final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
 Future<void> saveEmail(String email) async {
-  // Validate the email format
+  // Regex to Validate the email format, will then be replaced with advanced regex
   if (!RegExp(r'^[^@]+@[^@]+\.[^@]+').hasMatch(email)) {
     throw Exception('Invalid email format');
   }
 
   try {
-    // Optional: Create a user with email and password for authentication
     UserCredential userCredential = await _auth.createUserWithEmailAndPassword(
       email: email,
-      password: 'temporaryPassword123', // Use a secure password in production
+      password: 'temporaryPassword123', 
     );
 
     // Save the email to Firestore
